@@ -1,13 +1,127 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: rgb(71, 163, 125);
+  background: radial-gradient(
+    circle,
+    rgb(0, 255, 149) 0%,
+    rgb(18, 40, 31) 0%,
+    rgb(0, 0, 0) 100%
+  );
+  color: rgb(255, 255, 255);
+}
+.App {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  gap: 60px;
+}
+.headerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.headerContainer img {
+  width: 5rem;
+  height: 5rem;
+}
+.main_container {
+  background: rgb(39, 127, 98);
+  background: linear-gradient(180deg, rgb(19, 56, 44) 0%, rgb(11, 78, 48) 100%);
+  padding-left: 35px;
+  padding-top: 25px;
+  padding-bottom: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: xx-small;
+  gap: 20px;
+  border-radius: 5px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main_container_firstColum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main_container_firstColum div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.main_container_secondColum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_container_secondColum div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.main_container input {
+  padding: 4px 4px;
+  border: 1px solid rgba(255, 255, 255, 0.201);
+  border-radius: 2px;
+  width: 80%;
+  background-color: #02170f2d;
+  color: rgba(255, 255, 255, 0.416);
+}
+.main_container input:focus {
+  border: 1px solid rgba(255, 255, 255, 0.201);
+  outline: none;
+}
+
+table {
+  width: 30rem;
+  font-size: x-small;
+  margin-left: 15px;
+}
+th {
+  color: rgb(0, 255, 255);
+}
+
+td {
+  text-align: center;
+}
+
+@media screen and (min-width: 360px) and (max-width: 480px) {
+  table {
+    width: 100%;
+    margin: 20px;
+  }
+  .App {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  th {
+    color: rgb(0, 255, 255);
+    font-size: xx-small;
+  }
+
+  td {
+    text-align: center;
+    font-size: xx-small;
+  }
 }
